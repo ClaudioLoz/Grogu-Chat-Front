@@ -18,7 +18,7 @@ export default function Logout() {
   };
   return (
     <Button onClick={handleClick}>
-      <BiPowerOff />
+      Salir de la sesión
     </Button>
   );
 }

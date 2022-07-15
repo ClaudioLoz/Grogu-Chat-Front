@@ -14,7 +14,7 @@ export default function Welcome() {
     <Container>
       <img src={Grogu} alt="" />
       <h1>
-        Bienvenido, <span>{userName}!</span>
+        Bienvenido al GroguChat, <span>{userName}!</span>
       </h1>
       <h3>Elige a alguien para empezar a chatear.</h3>
     </Container>

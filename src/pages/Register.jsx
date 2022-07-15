@@ -74,9 +74,7 @@ export default function Register() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    console.log("a");
     // if (handleValidation()) {
-      console.log("v")
       const { email, username, password } = values;
       const { data } = await axios.post(registerRoute, {
         username,
@@ -113,7 +111,7 @@ export default function Register() {
             <LockOutlinedIcon />
           </Avatar>
           <Typography component="h1" variant="h5">
-            Sign up
+            Registro
           </Typography>
           <Box component="form" noValidate onSubmit={e => handleSubmit(e)} sx={{ mt: 3 }}>
             <Grid container spacing={2}>
@@ -165,12 +163,7 @@ export default function Register() {
                   onChange={(e) => handleChange(e)}
                 />
               </Grid>
-              {/* <Grid item xs={12}>
-                <FormControlLabel
-                  control={<Checkbox value="allowExtraEmails" color="primary" />}
-                  label="I want to receive inspiration, marketing promotions and updates via email."
-                />
-              </Grid> */}
+
             </Grid>
             <Button
               type="submit"
@@ -178,12 +171,12 @@ export default function Register() {
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
             >
-              Sign Up
+              REGISTRAR
             </Button>
             <Grid container justifyContent="flex-end">
               <Grid item>
                 <Link to='/login' variant="body2">
-                  Already have an account? Sign in
+                  ¿Ya tienes una cuenta? Inicia Sesión
                 </Link>
               </Grid>
             </Grid>
